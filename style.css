@@ -1,0 +1,159 @@
+
+            * {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #000000;
+    --card: #1a0202;
+    --text: #e6eef8;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+    background: var(--bg);
+    color: var(--text);
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.fear {
+    color: white;
+}
+
+.esports {
+    color: red;
+}
+
+.catchphrase {
+    font-size: 0.8em;
+    color: var(--text);
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), #ca0000);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: white;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: red;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+    text-shadow: 0 0 40px red, 0 0 60px red, 0 0 80px red;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 340px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.member {
+    background: var(--card);
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.member h3 {
+    margin: 0 0 6px 0;
+}
+
+footer {
+    color: #9aa4b2;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.9rem;
+}
+            main{ 
+                max-width:1100px;
+                margin:0 auto;
+                flex:1;
+                display:flex;
+                flex-direction:column;
+                gap: 18px;}
+            .grid{
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+                gap:12px}
+            .member{
+                background:var(--card);
+                padding:14px;
+                border-radius:10px;
+                border:1px solid rgba(255,255,255,0.02)}
+            .member h3{
+                margin:0 0 6px 0
+            }
+            footer{
+                color:#9aa4b2;
+                background-color: rgb(26, 26, 26);
+                text-align:center;
+                margin-top:auto;
+                width: 100% ;
+                font-size:0.9rem;
+                 line-height: 1;
+                padding: 12px 0;
+                border-top: 1px solid rgba(255,255,255,0.1)
+            }
+                
+ 
