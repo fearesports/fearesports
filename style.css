@@ -207,11 +207,20 @@ main {
 }
 
 .glitch-red {
-    color: red;
+    color: #990000;
 }
 
 .glitch-white {
-    color: blue;
+    color: none ;
+}
+
+
+.font-glitch-1 {
+    font-family: 'Courier New', monospace;
+}
+
+.font-glitch-2 {
+    font-family: 'Arial Black', sans-serif;
 }
 
 .catchphrase {
