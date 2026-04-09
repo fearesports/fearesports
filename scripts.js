@@ -98,10 +98,11 @@ function animate() {
 
 animate();
 
-// hi chicken, this is the glitch effect for the logo, you can adjust the values in math.random to change the intensity and frequency of the glitch, or just delete it if you dont want it
-/*
+// hi chicken, this is the glitch effect for the logo, you can adjust the values in math.random to change the intensity and frequency of the glitch, or just delete it if you dont want it //
+//please dont break this chicken, its really hard to make and i spent a lot of time on it, just change the values if you want to adjust it or delete it if you dont want it, but please dont break it, its really hard to make and i spent a lot of time on it //
 
 const logoglitch = document.querySelector(".welcomelogo");
+
 
 // create glitch layers
 const red = document.createElement("span");
@@ -117,19 +118,21 @@ logoglitch.appendChild(red);
 logoglitch.appendChild(white);
 
 function glitch() {
-  // random offsets
-  const x1 = (Math.random() * 12 - 6).toFixed(1);
-  const y1 = (Math.random() * 6 - 3).toFixed(1);
+  // random offsets (you can add a y variable if you want vertical glitch)
 
-  const x2 = (Math.random() * 12 - 6).toFixed(1);
-  const y2 = (Math.random() * 6 - 3).toFixed(1);
+  
+  const x1 = (Math.random() * 30 - 17).toFixed(1);  
+  const x2 = (Math.random() * 30 - 17).toFixed(1);
+
 
   // show layers
   red.style.opacity = "0.8";
   white.style.opacity = "0.8";
 
-  red.style.transform = `translate(${x1}px, ${y1}px)`;
-  white.style.transform = `translate(${x2}px, ${y2}px)`;
+  red.style.transform = `translate(${x1}px, 0)`;
+  white.style.transform = `translate(${x2}px, 0)`;
+  logoglitch.style.filter = "blur(1px)";
+
 
   // slight shake on main text
   logoglitch.style.transform = `translate(${(Math.random()*4-2)}px, ${(Math.random()*4-2)}px)`;
@@ -141,12 +144,13 @@ function glitch() {
     red.style.transform = "translate(0,0)";
     white.style.transform = "translate(0,0)";
     logoglitch.style.transform = "translate(0,0)";
+    logoglitch.style.filter = "none";
   }, 150);
 
   // random interval 
-  setTimeout(glitch, Math.random() * 3500 + 1500);
+  setTimeout(glitch, Math.random() * 875 + 375);
+  
 }
 
 // wait until typing animation finishes
 setTimeout(glitch, 1500);
-*/
