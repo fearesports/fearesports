@@ -1,3 +1,94 @@
+/* Responsive design for the entire site */
+@media (max-width: 1100px) {
+    main {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .welcomelogo {
+        font-size: 2.5rem;
+        max-width: 8ch;
+    }
+    .catchphrase {
+        font-size: 1rem;
+        max-width: 10ch;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 10px 4vw 0 4vw;
+        min-height: 60px;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    nav a {
+        padding: 7px 10px;
+        font-size: 0.98em;
+    }
+    .brand {
+        font-size: 1.3rem;
+    }
+    .welcomelogo-section {
+        padding-top: 3vh;
+    }
+    .below-divider {
+        padding: 32px 0 20px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .bg-skull {
+        width: 40vw;
+        max-width: 120px;
+        min-width: 60px;
+    }
+    body {
+        font-size: 0.98rem;
+    }
+    header {
+        padding: 6px 2vw 0 2vw;
+        gap: 6px;
+    }
+    nav {
+        gap: 4px;
+    }
+    nav a {
+        padding: 5px 6px;
+        font-size: 0.92em;
+    }
+    .brand {
+        font-size: 1.1rem;
+    }
+    .welcomelogo {
+        font-size: 1.5rem;
+        max-width: 6ch;
+    }
+    .catchphrase {
+        font-size: 0.9rem;
+        max-width: 8ch;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .member {
+        padding: 7px;
+    }
+    .modal-content {
+        padding: 16px 8px 12px 8px;
+        min-width: 120px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -304,97 +395,6 @@ footer {
     z-index: 2;
 }
 
-/* Responsive design for the entire site */
-@media (max-width: 1100px) {
-    main {
-        max-width: 98vw;
-        padding: 0 2vw;
-    }
-}
-
-@media (max-width: 900px) {
-    .welcomelogo {
-        font-size: 2.5rem;
-        max-width: 8ch;
-    }
-    .catchphrase {
-        font-size: 1rem;
-        max-width: 10ch;
-    }
-    .grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 700px) {
-    header {
-        padding: 10px 4vw 0 4vw;
-        min-height: 60px;
-    }
-    nav {
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    nav a {
-        padding: 7px 10px;
-        font-size: 0.98em;
-    }
-    .brand {
-        font-size: 1.3rem;
-    }
-    .welcomelogo-section {
-        padding-top: 3vh;
-    }
-    .below-divider {
-        padding: 32px 0 20px 0;
-    }
-}
-
-@media (max-width: 500px) {
-    .bg-skull {
-        width: 40vw;
-        max-width: 120px;
-        min-width: 60px;
-    }
-  
-    body {
-        font-size: 0.98rem;
-    }
-    header {
-        padding: 6px 2vw 0 2vw;
-        gap: 6px;
-    }
-    nav {
-        gap: 4px;
-    }
-    nav a {
-        padding: 5px 6px;
-        font-size: 0.92em;
-    }
-    .brand {
-        font-size: 1.1rem;
-    }
-    .welcomelogo {
-        font-size: 1.5rem;
-        max-width: 6ch;
-    }
-    .catchphrase {
-        font-size: 0.9rem;
-        max-width: 8ch;
-    }
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 6px;
-    }
-    .member {
-        padding: 7px;
-    }
-    .modal-content {
-        padding: 16px 8px 12px 8px;
-        min-width: 120px;
-    }
-}
 
 .modal {
     position: fixed;
