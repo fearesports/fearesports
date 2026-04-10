@@ -281,10 +281,10 @@ main p {
 footer {
     color: #b0b6c4;
     text-align: center;
-    margin-top: 18px;
+
     font-size: 0.98rem;
     background: #131317;
-    border-top: 1px solid #23232a;
+    border-top: none;
     padding: 18px 0 12px 0;
     width: 100%;
 }
@@ -402,3 +402,33 @@ footer {
     pointer-events: none;
 }
 
+.bg-skull {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    width: 500px;
+    filter: blur(2px);
+    z-index: 1;
+    pointer-events: none;
+
+     animation: skullPulse 6s ease-in-out infinite;
+}
+
+
+
+@keyframes skullPulse {
+    
+    
+    0%, 100% {
+     
+        transform: translate(-50%, -50%) scale(1.15);
+        opacity: 0.05;
+      
+    }
+    50% {
+       
+        transform: translate(-50%, -50%) scale(1.25);
+        opacity: 0.08;
+    }
+}
