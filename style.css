@@ -352,11 +352,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .bg-skull {
-        width: 40vw;
-        max-width: 120px;
-        min-width: 60px;
-    }
+  
     body {
         font-size: 0.98rem;
     }
