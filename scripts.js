@@ -1,4 +1,5 @@
-// Hi chicken, or whoever is reading this, i added some notes just in case you need to change something ill just explain it does and how you can modify it //
+
+// Hi chicken, or whoever is reading this, i added some notes just in case you need to change something ill just explain how you can modify it //
 
 
 
@@ -154,3 +155,27 @@ function glitch() {
 
 // wait until typing animation finishes
 setTimeout(glitch, 1500);
+
+
+
+
+
+// dont touch this chicken, 🥺
+document.addEventListener('DOMContentLoaded', function() {
+
+  const videoCards = document.querySelectorAll('.video-card');
+  videoCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const overlay = card.querySelector('.video-overlay');
+      if (overlay) overlay.style.opacity = '0.12';
+      const playBtn = card.querySelector('.video-play');
+      if (playBtn) playBtn.style.transform = 'translate(-50%, -50%) scale(1.18)';
+    });
+    card.addEventListener('mouseleave', () => {
+      const overlay = card.querySelector('.video-overlay');
+      if (overlay) overlay.style.opacity = '0.32';
+      const playBtn = card.querySelector('.video-play');
+      if (playBtn) playBtn.style.transform = 'translate(-50%, -50%) scale(1)';
+    });
+  });
+});
