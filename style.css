@@ -999,14 +999,12 @@ body, main, header, footer, .esports-footer {
 }
 
 
-/* CHICKEN, THIS IS THE END OF THE MAIN CODE, THE REST OF THE CSS FILE IS FOR OTHER PAGES OR GENERAL SETTINGS, IF YOU WANT TO CHANGE ANYTHING ON THE OTHER PAGES GO TO THE RESPECTIVE ROW */ 
-
 
 /* CHICKEN, TEAMS PAGE STARTS HERE */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
-/* === TEAM PAGE STYLES === */
+/*  TEAM PAGE STYLES*/
 .team-hero {
     position: relative;
     width: 90vw;
@@ -1306,7 +1304,7 @@ body, main, header, footer, .esports-footer {
 
 
 
-/* --- TOURNAMENTS SECTION --- */
+/* TOURNAMENTS SECTION */
 .tournaments-title {
     color: #fff;
     font-size: 2.5rem;
@@ -1493,18 +1491,14 @@ body, main, header, footer, .esports-footer {
     align-items: center;
     gap: 0.4em;
 }
-.icon-date::before {
-    content: '\1F4C5'; /* calendar emoji */
-    font-size: 1em;
-    margin-right: 0.2em;
-}
+
 .icon-time::before {
-    content: '\23F0'; /* alarm clock emoji */
+    content: '\23F0'; 
     font-size: 1em;
     margin-right: 0.2em;
 }
 .icon-players::before {
-    content: '\1F465'; /* busts in silhouette emoji */
+    content: '\1F465'; 
     font-size: 1em;
     margin-right: 0.2em;
 }
