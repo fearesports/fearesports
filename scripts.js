@@ -2,12 +2,12 @@
 
 
 
-// --- TOURNAMENTS SHOW MORE BUTTON dont touch it yet ---
+// TOURNAMENTS SHOW MORE BUTTON dont touch it yet
 document.addEventListener('DOMContentLoaded', function() {
   const showMoreBtn = document.querySelector('.tournaments-showmore');
   if (showMoreBtn) {
     showMoreBtn.addEventListener('click', function() {
-      // Placeholder: In a real site, load more tournaments here
+    
       showMoreBtn.textContent = 'No more tournaments';
       showMoreBtn.disabled = true;
       showMoreBtn.style.opacity = '0.6';
