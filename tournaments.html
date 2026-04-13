@@ -1,0 +1,516 @@
+
+ <!-- Hi chicken so ur prob wondering how to add,remove or modify a tournament, im here to teach you how
+
+Creating:
+1. ok for creating a tournament, copy one of the tournament cards and paste it where you want in the code (inside the tournaments grid)
+2. change the image, title, org, time and players registered to the correct info
+3. im going to asume that the tournament is active
+
+so fill out this (active form):
+
+                    <div class="tournament-card active">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status active">ACTIVE</span>
+                            <span class="tournament-date-badge">DATE OF THE EVENT</span>
+                        </div>
+                        <div class="tournament-card-body">
+                            <img src="rooster but better quality.avif" alt="">
+                            <div class="tournament-title">TOURNAMENT TITLE</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                                <span class="tournament-info"><span class="icon-time"></span> HOUR + TIMEZONE</span>
+                                <span class="tournament-info"><span class="icon-players"></span> TEAMS REGISTERED   </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">PRIZE POOL (LEAVE IT AS TBA IF YOU DONT KNOW)</div>
+                            <a href="https://matcherino.com/t/fear5k" target="_blank" class="tournament-btn active">Participate</a>
+                        </div>
+                    </div>
+
+modifying:
+1. for modifying, just change the info that needs to be changed, for example if the tournament is no longer active, change the class from active to tba and change the status text from active to finished, also change the participate button to coming soon and remove the link and add the styles to make it look disabled
+
+
+example: 
+
+                 <div class="tournament-card active">
+                        <div class="tournament-card-header">
+     HERE                   <span class="tournament-status active">ACTIVE</span>  <-- you want to change this to this <span class="tournament-status tba">FINISHED</span>
+                            <span class="tournament-date-badge">Apr 25</span>
+                        </div>
+                        <div class="tournament-card-body">
+                            <img src="rooster but better quality.avif" alt="">
+                            <div class="tournament-title">Fear Esport 5k Member!</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                                <span class="tournament-info"><span class="icon-time"></span> 3:00PM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 40 / 256  Teams Registered</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$500 Prize Pool</div>
+   HERE  <a href="https://matcherino.com/t/fear5k" target="_blank" class="tournament-btn active">Participate</a> <-- you want to change this to this <a href="#" class="tournament-btn tba" tabindex="-1" style="pointer-events:none;opacity:0.6;">Coming Soon</a>
+                        </div>
+                    </div>
+
+        
+
+deleting:
+1. for deleting, just remove the tournament card you want to delete from the code (the whole div with the class tournament card)
+
+
+aka all this
+
+                    <div class="tournament-card active">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status active">ACTIVE</span>
+                            <span class="tournament-date-badge">Apr 25</span>
+                        </div>
+                        <div class="tournament-card-body">
+                            <img src="rooster but better quality.avif" alt="">
+                            <div class="tournament-title">Fear Esport 5k Member!</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                                <span class="tournament-info"><span class="icon-time"></span> 3:00PM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 40 / 256  Teams Registered</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$500 Prize Pool</div>
+                            <a href="https://matcherino.com/t/fear5k" target="_blank" class="tournament-btn active">Participate</a>
+                        </div>
+                    </div>
+
+
+
+
+    if something breaks change it back and ask me. or ig you could ask an AI but idk up to you.
+
+    -->
+
+
+<!doctype html>
+    <html lang="en">
+    <head>
+         <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Tournaments - Fear Esports</title>
+    </head>
+    <body>
+        <canvas id="particles"></canvas>
+        <header>
+             
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="team.html">Team</a>
+                <a href="creators.html">Creators</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="about.html">About</a>
+                <a href="support.html">Support</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="tournaments-title">Tournaments</h1>
+            <section class="tournaments-section">
+                <div class="tournaments-grid">
+
+
+
+
+
+
+                    
+
+
+
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Soon</span>
+                            <span class="tournament-date-badge">TBA</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="alphawho.jpg" alt="">
+                            <div class="tournament-title">Alomix worldcup</div>
+                            <div class="tournament-org">by alomix Esports</div>
+                            <div class="tournament-info-row">
+                    
+                                <span class="tournament-info"><span class="icon-time"></span> TBA</span>
+                                <span class="tournament-info"><span class="icon-players"></span> TBA</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">TBA</div>
+                            <a href="#" class="tournament-btn tba" tabindex="-1" style="pointer-events:none;opacity:0.6;">Coming Soon</a>
+                        </div>
+                    </div>
+
+
+
+
+                    
+                    <div class="tournament-card active">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status active">Active</span>
+                            <span class="tournament-date-badge">Apr 25</span>
+                        </div>
+                        <div class="tournament-card-body">
+                            <img src="rooster but better quality.avif" alt="">
+                            <div class="tournament-title">Fear Esport 5k Member!</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                                <span class="tournament-info"><span class="icon-time"></span> 3:00PM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 40 / 256  Teams Registered</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$500 Prize Pool</div>
+                            <a href="https://matcherino.com/t/fear5k" target="_blank" class="tournament-btn active">Participate</a>
+                        </div>
+                    </div>
+
+
+
+
+                      
+                    <div class="tournament-card active">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status active">Active</span>
+                            <span class="tournament-date-badge">Apr 25</span>
+                        </div>
+                        <div class="tournament-card-body">
+                            <img src="FEARXMATCHERINO5.avif" alt="">
+                            <div class="tournament-title">Fear APAC Matcherino #4</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                             
+                                <span class="tournament-info"><span class="icon-time"></span> 2:15AM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 9 Teams Registered  ‎ ‎ ‎ ‎</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">TBA</div>
+                           <a href="https://matcherino.com/t/apac5" target="_blank" class="tournament-btn active">Participate</a>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="tournament-card active">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status active">Active</span>
+                            <span class="tournament-date-badge">Apr 18</span>
+                        </div>
+                        <div class="tournament-card-body">
+                            <img src="BRAWLOFLEGENDS.avif" alt="">
+                            <div class="tournament-title">Brawl of Legends</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                             
+                                <span class="tournament-info"><span class="icon-time"></span> 8:00PM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 25 / 256 Teams Registered</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">TBA</div>
+                           <a href="https://matcherino.com/t/brawloflegends" target="_blank" class="tournament-btn active">Participate</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Apr 6</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="FEARXMATCHERINO4.avif" alt="">
+                            <div class="tournament-title">Fear APAC Matcherino #4</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                    
+                                <span class="tournament-info"><span class="icon-time"></span> 12:30AM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 29 Teams checked in </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$127.40</div>
+                         <a href="https://matcherino.com/t/apac4/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Apr 4</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="FEARXVORTEX.avif" alt="">
+                            <div class="tournament-title">Fear X Vortex</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                    
+                                <span class="tournament-info"><span class="icon-time"></span> 7:00PM GMT-5 </span>
+                                <span class="tournament-info"><span class="icon-players"></span> 87 Teams checked in ‎ ‎ ‎ ‎</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$428.45</div>
+                                  <a href="https://matcherino.com/t/fearxvortex/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                 <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Mar 28</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="fearabovesmth.avif" alt="">
+                            <div class="tournament-title">Fear X Above the Rest</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                 
+                                <span class="tournament-info"><span class="icon-time"></span> 7:00PM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 167 Teams checked In</span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$737.35</div>
+                            <a href="https://matcherino.com/t/fearesportxtbd/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Mar 28</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="FEARXMATCHERINO3.avif" alt="">
+                            <div class="tournament-title">Fear APAC Matcherino #3</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                      
+                                <span class="tournament-info"><span class="icon-time"></span> 2:15AM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 39 Teams checked in </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">TBA</div>
+                            <a href="https://matcherino.com/t/apac3/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+                                <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Mar 21</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="FearSAMatcherino.avif" alt="">
+                            <div class="tournament-title">Fear SA Matcherino</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+   
+                                <span class="tournament-info"><span class="icon-time"></span> 6:30PM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 96 Teams checked in ‎ ‎ ‎ ‎ </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$214.25</div>
+                             <a href="https://matcherino.com/t/sa/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Mar 14</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="FEARAPACMATCHERINO2.avif" alt="">
+                            <div class="tournament-title">Fear APAC Matcherino #2</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+              
+                                <span class="tournament-info"><span class="icon-time"></span> 2:15AM GMT-5</span>
+                                <span class="tournament-info"><span class="icon-players"></span> 28 Teams checked in ‎ ‎ ‎ ‎ </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">TBA</div>
+                        <a href="https://matcherino.com/t/apac2/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Mar 8</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="NOTDAY2S2.avif" alt="">
+                            <div class="tournament-title">Not Day 2 (Season 2)</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                          
+                                <span class="tournament-info"><span class="icon-time"></span> 1:00PM GMT-5 </span>
+                                <span class="tournament-info"><span class="icon-players"></span> 83 Teams checked in ‎ ‎ ‎ ‎ </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$254.77</div>
+                            <a href="https://matcherino.com/t/notday2s2/payouts" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="tournament-card tba">
+                        <div class="tournament-card-header">
+                            <span class="tournament-status tba">Finalized</span>
+                            <span class="tournament-date-badge">Feb 21</span>
+                        </div>
+                        <div class="tournament-card-body">
+                                <img src="FEARXPUFFYLAND.avif" alt="">
+                            <div class="tournament-title">$50+ Fear Esports X PuffyLand</div>
+                            <div class="tournament-org">by Fear Esports</div>
+                            <div class="tournament-info-row">
+                 
+                                <span class="tournament-info"><span class="icon-time"></span>2:15PM GMT-6</span>
+                                <span class="tournament-info"><span class="icon-players"></span>55 Teams checked in ‎ ‎ ‎ ‎ </span>
+                            </div>
+                        </div>
+                        <div class="tournament-card-footer">
+                            <div class="tournament-prize">$109.92</div>
+                            <a href="https://matcherino.com/t/50fearxpuffy/overview" target="_blank" class="tournament-btn active">Results</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dont delete anything below this-->
+                </div>
+
+
+
+
+              <!-- enable this after we get more tournamets <div class="tournaments-showmore-wrap">
+                    <button class="tournaments-showmore">Show More</button>
+                </div>--> 
+            </section>
+        </main>
+             <footer>
+             <footer class="esports-footer">
+                    <div class="footer-main">
+                        <div class="footer-col brand-col">
+                            <img src="skull.png" alt="Footer Logo or Banner" style="max-width:250px;display:block;margin:0 auto 30px auto;"> 
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-title">Quick Links</div>
+                            <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="tournaments.html">Tournaments</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="support.html">Support</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <div class="footer-title">Community</div>
+                            <ul class="footer-links">
+                                <li><a href="https://discord.gg/6zn6gR9SNB" target="_blank" rel="noopener">Discord</a></li>
+                                <li><a href="https://x.com/FearEsportsAcc" target="_blank" rel="noopener">Twitter</a></li>
+                                <li><a href="https://www.youtube.com/@OfficialFearEsports" target="_blank" rel="noopener">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-bar">
+                        <div class="footer-bottom-content">
+                            <span class="footer-copyright">© 2026 Fear Esports. All rights reserved.</span>
+                            <span class="footer-legal">
+                    
+                            </span>
+                        </div>
+                    </div>
+           
+            
+    </footer>
+               
+         <div id="shop-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>WIP</h2>
+                <p>we are working on the shop! (we dont have merch)</p>
+            </div>
+        </div>
+
+    <script src="scripts.js"></script>
+    </body>
+    </html>
