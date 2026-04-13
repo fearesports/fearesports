@@ -1,3 +1,14 @@
+.team-card-roleabout-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+.team-card-roleabout {
+    margin: 0;
+}
 
 /* CHIKEN, ALL OF THIS IS INDEX OR MAIN PAGE SETTINGS, IF YOU WANT TO CHANGE ANYTHING ON THE OTHER PAGES GO TO THE RESPECTIVE ROW */
 
@@ -1598,3 +1609,255 @@ body, main, header, footer, .esports-footer {
         padding-right: 0.7rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* about page */
+
+.about-title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2.5rem 0 1.5rem 0;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: relative;
+}
+
+.about-description {
+    color: #fff;
+    font-size: 1.08rem;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    line-height: 1.6;
+}   
+.about-card-title {
+      color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2.5rem 0 1.5rem 0;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: relative;
+}
+
+
+.bg-skull2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    width: 500px;
+    filter: blur(2px);
+    z-index: 0;
+    pointer-events: none;
+ 
+     animation: skullPulse 6s ease-in-out infinite;
+}
+
+
+.team-card-roleabout  {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    box-shadow: 0 2px 12px 0 red ;
+}
+
+.team-card-roleabout.COO  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff7a18 0%, #ff3c00 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 red    ;
+}
+
+.team-card-roleabout.NAManager  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff0000 0%, #a80000 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 red;
+}
+
+
+.team-card-roleabout.SocialMediaManager  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff00cc 0%, #3333ff 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 pink;
+}
+
+
+.team-card-roleabout.HeadofTournamentManagement  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 orange;
+}
+
+.team-card-roleabout.EUManager  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 lightblue;
+}
+
+.team-card-roleabout.EventsOrganizer  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 red;
+}
+
+
+
+
+
+.team-card-roleabout.HeadofContentCreation  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 purple;
+}
+.team-card-roleabout.APACManager  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #00f260 0%, #0575e6 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 green;
+}
+.team-card-roleabout.TournamentAdmin  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 lightpink;
+}
+.team-card-roleabout.HeadofTicketSupport  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #36d1dc 0%, #5b86e5 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 lightcyan;
+}
+.team-card-roleabout.OutreachManager  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 lightsalmon;
+}
+.team-card-roleabout.HeadofActivityManagement  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 green;
+}
+.team-card-roleabout.AEO  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #c471f5 0%, #fa71cd 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 lightpink;
+}
+.team-card-roleabout.HeadofBranding  {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px 0 darkorchid;
+}
+
