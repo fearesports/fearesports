@@ -38,7 +38,7 @@ body.index .quick-socials, body.home .quick-socials {
 .quick-social:hover,
 .quick-social:focus {
     transform: translateY(-5px) scale(1.08);
-     box-shadow: 0px 0px 16px 10px #ff000055;
+     box-shadow: 0 2px 8px 0 #ff000055;
     
 }
 #discord-logo {
@@ -473,8 +473,6 @@ body.index .quick-socials, body.home .quick-socials {
 html, body {
     min-height: 100vh;
     background: var(--bg);
-    display: flex;
-    flex-direction: column;
 }
 
 body {
@@ -484,7 +482,8 @@ body {
     background-color: supercool;
     color: var(--text);
     padding: 0px;
-    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -597,10 +596,10 @@ nav a:hover::after {
 }
 
 main {
-    min-height: 0;
+    min-height: 100vh;
     max-width: 1100px;
     margin: 0 auto;
-    flex: 1 0 auto;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1091,6 +1090,18 @@ body, main, header, footer, .esports-footer {
     .team-hero-content {
         padding: 32px 0 18px 0;
     }
+    main, body {
+        min-height: 100vh;
+    }
+    footer {
+        min-height: 120px;
+        padding-bottom: 32px;
+    }
+    .team-card-img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 }
 
 /* 3D FLIP CARD */
@@ -1285,6 +1296,7 @@ body, main, header, footer, .esports-footer {
         min-height: 260px;
     }
 }
+
 
 
 
@@ -1592,4 +1604,3 @@ body, main, header, footer, .esports-footer {
         padding-right: 0.7rem;
     }
 }
-
