@@ -1871,3 +1871,69 @@ body, main, header, footer, .esports-footer {
     box-shadow: 0 2px 12px 0 darkorchid;
 }
 
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.about-section {
+       background: #11060a;
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+   transform: translateY(-5px) scale(1.05);
+     box-shadow: 0 2px 8px 0 #ff000055;
+       border-color: #ff0000;
+    
+    text-shadow: 0 0 8px #ff0000;
+}
+.about-section:hover .about-description {
+    color: #ff0000;
+}
+
+.about-section:hover .about-title {
+    color: #ff0000;
+}
+
+
+
+
+.about-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cfcfe6;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stat-box {
+        background: #1a030b;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.stat-number {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff004c;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #aaaad4;
+    margin-top: 5px;
+}
