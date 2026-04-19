@@ -1943,9 +1943,18 @@ body, main, header, footer, .esports-footer {
 
 .stats-grid {
     display: grid;
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+    .stats-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
     margin-top: 15px;
+}
 }
 
 .stat-box {
