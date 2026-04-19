@@ -2,12 +2,12 @@
 
 
 
-// TOURNAMENTS SHOW MORE BUTTON dont touch it yet
+// --- TOURNAMENTS SHOW MORE BUTTON dont touch it yet ---
 document.addEventListener('DOMContentLoaded', function() {
   const showMoreBtn = document.querySelector('.tournaments-showmore');
   if (showMoreBtn) {
     showMoreBtn.addEventListener('click', function() {
-    
+      // Placeholder: In a real site, load more tournaments here
       showMoreBtn.textContent = 'No more tournaments';
       showMoreBtn.disabled = true;
       showMoreBtn.style.opacity = '0.6';
@@ -37,7 +37,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Hi chicken, this is the shop pop up i just added this while we get a shop //
 document.addEventListener('DOMContentLoaded', function() {
-    var shopLink = document.querySelector('a[href="shop.html"], a[href="creators.html"]');
+    var shopLink = document.querySelector('a[href="shop.html"]');
+    var modal = document.getElementById('shop-modal');
+    var closeBtn = document.getElementById('close-modal');
+    if (shopLink && modal && closeBtn) {
+        shopLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var shopLink = document.querySelector('a[href="creators.html"]');
     var modal = document.getElementById('shop-modal');
     var closeBtn = document.getElementById('close-modal');
     if (shopLink && modal && closeBtn) {
