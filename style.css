@@ -487,18 +487,32 @@ body {
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 22px;
-    padding: 16px 20px;
-    min-height: 80px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 22px;
     padding: 16px 20px 0 20px;
+    min-height: 80px;
 
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+}
 } 
 
 .brand {
@@ -1077,7 +1091,7 @@ body, main, header, footer, .esports-footer {
         gap: 18px;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .team-cards-grid {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -1101,6 +1115,7 @@ body, main, header, footer, .esports-footer {
         object-fit: contain;
     }
 }
+
 
 /* 3D FLIP CARD */
 .team-card {
