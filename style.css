@@ -1,5 +1,10 @@
+body, a, p, h1, h2, h3, h4, h5, h6, span, button, input, textarea, li, ul, ol, label, div {
+    font-family: Inter, system-ui, "Segoe UI", Roboto, Arial;
+}
 
-/* CHICKEN, ALL OF THIS IS INDEX OR MAIN PAGE SETTINGS, IF YOU WANT TO CHANGE ANYTHING ON THE OTHER PAGES GO TO THE RESPECTIVE ROW */
+
+
+/* CHIKEN, ALL OF THIS IS INDEX OR MAIN PAGE SETTINGS, IF YOU WANT TO CHANGE ANYTHING ON THE OTHER PAGES GO TO THE RESPECTIVE ROW */
 
 /* quick socials */
 .quick-socials {
@@ -22,7 +27,7 @@ body.index .quick-socials, body.home .quick-socials {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: red;
+    background: red;    
     transition: box-shadow 0.25s cubic-bezier(.4,2,.6,1), transform 0.25s cubic-bezier(.4,2,.6,1);
   
     cursor: pointer;
@@ -2377,5 +2382,285 @@ body, main, header, footer, .esports-footer {
     }
     .stat-number {
         font-size: 1.1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* achievements page */
+
+
+    .achievements-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 16px 32px 16px;
+      text-align: center;
+ 
+    }
+    .achievements-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      color: #fff;
+      text-shadow: 0 2px 24px #ff003c22;
+    }
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+        position: relative;
+   
+      margin-bottom: 64px;
+      
+    }
+    .achievement-card {
+      background: #111115;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px 0 #ff003c22, 0 1.5px 8px 0 #000a;
+      border: 1.5px solid #181824;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+      cursor: pointer;
+      min-height: 220px;
+  
+    }
+    .achievement-card:hover {
+      transform: scale(1.05) translateY(-6px);
+      box-shadow: 0 0 32px 4px #ff003c66, 0 2px 16px 0 #ff003c33;
+      border-color: #ff003c;
+      z-index: 2;
+    }
+    .achievement-img {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+      background: #181824;
+      border-radius: 14px 14px 0 0;
+      box-shadow: 0 2px 12px 0 #ff003c22;
+    }
+    .achievement-desc {
+      padding: 18px 12px 16px 12px;
+      font-size: 1.08rem;
+      color: #e6eef8;
+      opacity: 0.92;
+      flex: 1;
+    }
+
+    /* Hall of Fame */
+    .hof-section {
+      max-width: 600px;
+      margin: 0 auto 64px auto;
+      text-align: center;
+      position: relative;
+    }
+    .hof-title {
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+      color: #fff;
+      text-shadow: 0 2px 24px #ff003c22;
+    }
+    .hof-crown {
+      font-size: 2.5rem;
+      color: gold;
+      transform: rotate(-15deg);
+      margin-bottom: -18px;
+      text-shadow: 0 0 16px #ffd70099, 0 0 32px #fff2;
+      display: inline-block;
+    }
+    .hof-card-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 12px;
+    }
+    .hof-arrow {
+      background: #181824;
+      border: none;
+      color: #ff003c;
+      font-size: 2.2rem;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px 0 #ff003c22;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      z-index: 2;
+      outline: none;
+    }
+    .hof-arrow:hover {
+      background: #ff003c;
+      color: #fff;
+      box-shadow: 0 0 16px 2px #ff003c88;
+    }
+    .hof-card {
+      background: #18181c;
+      border-radius: 18px;
+      box-shadow: 0 0 32px 6px #ff003c55, 0 2px 16px 0 #000a;
+      border: 2px solid #ff003c;
+      padding: 32px 32px 24px 32px;
+      min-width: 320px;
+      max-width: 380px;
+      margin: 0 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: hof-fadein 0.5s;
+      position: relative;
+      transition: box-shadow 0.18s, transform 0.18s;
+      will-change: transform, box-shadow;
+      /* Optional floating animation */
+      animation: hof-fadein 0.5s, hof-float 3s ease-in-out infinite;
+    }
+    @keyframes hof-fadein {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes hof-float {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-10px);}
+    }
+    .hof-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 24px 0 #ff003c44;
+      margin-bottom: 18px;
+      border: 3px solid #fff;
+    }
+    .hof-name {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .hof-role {
+      color: #ff003c;
+      font-size: 1.08rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .hof-stats {
+      color: #e6eef8;
+      font-size: 1.05rem;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    /* Responsive */
+/* Achievements & Hall of Fame Responsive Design */
+@media (min-width: 700px) {
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr;
+        left: 5%;
+    }
+    .hof-section {
+        max-width: 600px;
+    }
+}
+@media (min-width: 1000px) {
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        left: 3.5%;
+    }
+    .hof-section {
+        max-width: 700px;
+    }
+}
+@media (min-width: 1300px) {
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        left: -6.5%;
+    }
+    .hof-section {
+        max-width: 900px;
+    }
+}
+@media (min-width: 1400px) {
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+     
+    }
+    .hof-section {
+        max-width: 1000px;
+    }
+}
+@media (min-width: 1800px) {
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .hof-section {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    .hof-section {
+        max-width: 98vw;
+    }
+    .hof-card {
+        min-width: 0;
+        max-width: 98vw;
+        padding: 18px 4vw 18px 4vw;
+    }
+    .hof-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 1.5rem;
+    }
+    .hof-img {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media (max-width: 600px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+       left: 2px;
+    }
+    .achievement-card {
+        min-height: 180px;
+    }
+    .hof-section {
+        max-width: 100vw;
+    }
+    .hof-card {
+        padding: 12px 2vw 12px 2vw;
     }
 }
