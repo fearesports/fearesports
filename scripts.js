@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     var shopLink = document.querySelector('a[href="creators.html"]');
     var modal = document.getElementById('shop-modal');
     var closeBtn = document.getElementById('close-modal');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-});
+}); */
 
 
 // Hi chicken, this will change the flickering of the logo in the main page just change the values near math.random() if you want to adjust the frequency or just outright delete it //
@@ -231,3 +231,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+
+
+
+
