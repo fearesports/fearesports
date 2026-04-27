@@ -1,0 +1,220 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+         <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Team - Fear Esports</title>
+    </head>
+    <body>
+        <canvas id="particles"></canvas>
+        <header>
+                
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="team.html">Team</a>
+                <a href="creators.html">Creators</a>
+                    <a href="achievements.html">Achievements</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="about.html">About</a>
+                 <a href="https://www.paypal.com/paypalme/FearEsportsOfficial?country.x=US&locale.x=en_US" target="_blank">Support</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+        </header>
+
+
+
+        <section class="achievements-section">
+    <h2 class="achievements-title">Achievements</h2>
+    <div class="achievements-grid">
+
+        
+      <div class="achievement-card">
+        <img src="$125 Tourney.png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+      <div class="achievement-card">
+        <img src="20 Matcherino Winners.jpg" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+      <div class="achievement-card">
+        <img src="apac (1).png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+      <div class="achievement-card">
+        <img src="APAC Champions.png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>  
+      <div class="achievement-card">
+        <img src="Fear NA Matcherino Performance.png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+      <div class="achievement-card">
+        <img src="Matcherino Pin Winners.jpg" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+      <div class="achievement-card">
+        <img src="SCORE.png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+      <div class="achievement-card">
+        <img src="SSR Champions.png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+           <div class="achievement-card">
+        <img src="Wiks Champions.png" alt="achievement img" class="achievement-img">
+        <div class="achievement-desc">description</div>
+      </div>
+    
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Add more cards if needed -->
+    </div>
+  </section>
+
+  <section class="hof-section">
+    <div class="hof-crown">👑</div>
+    <h2 class="hof-title">Hall Of Fame</h2>
+    <div class="hof-card-wrap">
+      <button class="hof-arrow" id="hof-prev">&#8592;</button>
+      <div class="hof-card" id="hof-card">
+        <!-- JS will fill this -->
+      </div>
+      <button class="hof-arrow" id="hof-next">&#8594;</button>
+    </div>
+  </section>
+
+
+        
+            <footer>
+             <footer class="esports-footer">
+                    <div class="footer-main">
+                        <div class="footer-col brand-col">
+                            <img src="skull.png" alt="Footer Logo or Banner" style="max-width:250px;display:block;margin:0 auto 30px auto;"> 
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-title">Quick Links</div>
+                            <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="tournaments.html">Tournaments</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="support.html">Support</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <div class="footer-title">Community</div>
+                            <ul class="footer-links">
+                                <li><a href="https://discord.gg/6zn6gR9SNB" target="_blank" rel="noopener">Discord</a></li>
+                                <li><a href="https://x.com/FearEsportsAcc" target="_blank" rel="noopener">Twitter</a></li>
+                                <li><a href="https://www.youtube.com/@OfficialFearEsports" target="_blank" rel="noopener">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-bar">
+                        <div class="footer-bottom-content">
+                            <span class="footer-copyright">© 2026 Fear Esports. All rights reserved.</span>
+                            <span class="footer-legal">
+                    
+                            </span>
+                        </div>
+                    </div>
+           
+            
+    </footer>
+               
+          <div id="shop-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>WIP</h2>
+                <p>This site is under construction</p>
+            </div>
+        </div>
+
+    <script src="scripts.js"></script>
+    </body>
+    </html>
+    <script >
+
+        
+         // Hall of Fame Data
+    const hofPlayers = [
+      {
+        img: 'yogurthalloffame.png',
+        name: 'Yogurt',
+        role: 'Penny Merchant',
+        information: [
+          'NA Player. Most of our earlier achievements was after he joined',
+
+        ]
+      },
+      {
+        img: 'skull.png',
+        name: 'chickenblox',
+        role: 'Owner',
+        information: [
+      'he owns everything',
+        ]
+      },
+      {
+        img: 'eggpameasteregg.jpg',
+        name: 'eggpam',
+        role: 'eggpam',
+        information: [
+      'eggpameggpameggpameggpameggpameggpameggpameggpam',
+        ]
+      }
+      // Add more players as needed
+    ];
+
+    let hofIndex = 0;
+    const hofCard = document.getElementById('hof-card');
+    function renderHOF(idx) {
+      const p = hofPlayers[idx];
+      hofCard.innerHTML = `
+        <img src=\"${p.img}\" alt=\"${p.name}\" class=\"hof-img\">
+        <div class=\"hof-name\">${p.name}</div>
+        <div class=\"hof-role\">${p.role}</div>
+        <div class=\"hof-information\">
+          ${p.information.map(s => `<span>${s}</span>`).join('')}
+        </div>
+      `;
+    }
+    document.getElementById('hof-prev').onclick = function() {
+      hofIndex = (hofIndex - 1 + hofPlayers.length) % hofPlayers.length;
+      hofCard.style.opacity = 0;
+      setTimeout(() => {
+        renderHOF(hofIndex);
+        hofCard.style.opacity = 1;
+      }, 200);
+    };
+    document.getElementById('hof-next').onclick = function() {
+      hofIndex = (hofIndex + 1) % hofPlayers.length;
+      hofCard.style.opacity = 0;
+      setTimeout(() => {
+        renderHOF(hofIndex);
+        hofCard.style.opacity = 1;
+      }, 200);
+    };
+    // Initial render
+    renderHOF(hofIndex);
+
+
+  </script>
